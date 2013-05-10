@@ -568,7 +568,9 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
              (term-color-blue ((t ( ,@fg-blue))))
              (term-color-magenta ((t ( ,@fg-magenta))))
              (term-color-cyan ((t ( ,@fg-cyan))))
-             (term-color-white ((t ( ,@fg-base00)))))
+             (term-color-white ((t ( ,@fg-base00))))
+             ;; which-func
+             (which-func ((t (,@fg-blue ,@bg-base02)))))
 
             ((foreground-color . ,(when (<= 16 (display-color-cells)) base0))
              (background-color . ,back)
